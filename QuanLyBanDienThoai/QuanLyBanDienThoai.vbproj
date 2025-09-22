@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E570FC46-2ECE-4B31-AF8D-498167C88460}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QuanLyBanDienThoai.My.MyApplication</StartupObject>
+    <RootNamespace>QuanLyBanDienThoai</RootNamespace>
+    <AssemblyName>QuanLyBanDienThoai</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QuanLyBanDienThoai.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QuanLyBanDienThoai.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCaoChiTietBan.Designer.vb">
+      <DependentUpon>BaoCaoChiTietBan.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="BaoCaoChiTietBan.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="BaoCaoChiTietNhap.Designer.vb">
+      <DependentUpon>BaoCaoChiTietNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoChiTietNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoHoaDonBan.Designer.vb">
+      <DependentUpon>BaoCaoHoaDonBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoHoaDonBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoHoaDonNhap.Designer.vb">
+      <DependentUpon>BaoCaoHoaDonNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoHoaDonNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoKhachHang.Designer.vb">
+      <DependentUpon>BaoCaoKhachHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoKhachHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoNhaCungCap.Designer.vb">
+      <DependentUpon>BaoCaoNhaCungCap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoNhaCungCap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCaoNhanVien.Designer.vb">
+      <DependentUpon>BaoCaoNhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCaoNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crpchitietban.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpchitietban.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="crpchitietnhap.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpchitietnhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crphoadonban.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crphoadonban.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crphoadonnhap.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crphoadonnhap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpkhachhang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpkhachhang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpnhacungcap.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpnhacungcap.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crpnhanvien.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpnhanvien.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dschitietban.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dschitietban.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dschitietnhap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dschitietnhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dshoadonban.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dshoadonban.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dshoadonnhap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dshoadonnhap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dskhachhang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dskhachhang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsnhacungcap.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsnhacungcap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsnhanvien.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsnhanvien.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormBC.Designer.vb">
+      <DependentUpon>FormBC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDH.Designer.vb">
+      <DependentUpon>FormDH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDK.Designer.vb">
+      <DependentUpon>FormDK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDN.Designer.vb">
+      <DependentUpon>FormDN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDT.Designer.vb">
+      <DependentUpon>FormDT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQL.Designer.vb">
+      <DependentUpon>FormQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTG.Designer.vb">
+      <DependentUpon>FormTG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ThuVien.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaoCaoChiTietBan.resx">
+      <DependentUpon>BaoCaoChiTietBan.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoChiTietNhap.resx">
+      <DependentUpon>BaoCaoChiTietNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoHoaDonBan.resx">
+      <DependentUpon>BaoCaoHoaDonBan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoHoaDonNhap.resx">
+      <DependentUpon>BaoCaoHoaDonNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoKhachHang.resx">
+      <DependentUpon>BaoCaoKhachHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoNhaCungCap.resx">
+      <DependentUpon>BaoCaoNhaCungCap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCaoNhanVien.resx">
+      <DependentUpon>BaoCaoNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpchitietban.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpchitietban.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpchitietnhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpchitietnhap.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crphoadonban.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crphoadonban.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crphoadonnhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crphoadonnhap.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpkhachhang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpkhachhang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpnhacungcap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpnhacungcap.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crpnhanvien.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpnhanvien.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBC.resx">
+      <DependentUpon>FormBC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDH.resx">
+      <DependentUpon>FormDH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDK.resx">
+      <DependentUpon>FormDK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDN.resx">
+      <DependentUpon>FormDN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDT.resx">
+      <DependentUpon>FormDT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQL.resx">
+      <DependentUpon>FormQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTG.resx">
+      <DependentUpon>FormTG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dschitietban.xsc">
+      <DependentUpon>dschitietban.xsd</DependentUpon>
+    </None>
+    <None Include="dschitietban.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dschitietban.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dschitietban.xss">
+      <DependentUpon>dschitietban.xsd</DependentUpon>
+    </None>
+    <None Include="dschitietnhap.xsc">
+      <DependentUpon>dschitietnhap.xsd</DependentUpon>
+    </None>
+    <None Include="dschitietnhap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dschitietnhap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dschitietnhap.xss">
+      <DependentUpon>dschitietnhap.xsd</DependentUpon>
+    </None>
+    <None Include="dshoadonban.xsc">
+      <DependentUpon>dshoadonban.xsd</DependentUpon>
+    </None>
+    <None Include="dshoadonban.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dshoadonban.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dshoadonban.xss">
+      <DependentUpon>dshoadonban.xsd</DependentUpon>
+    </None>
+    <None Include="dshoadonnhap.xsc">
+      <DependentUpon>dshoadonnhap.xsd</DependentUpon>
+    </None>
+    <None Include="dshoadonnhap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dshoadonnhap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dshoadonnhap.xss">
+      <DependentUpon>dshoadonnhap.xsd</DependentUpon>
+    </None>
+    <None Include="dskhachhang.xsc">
+      <DependentUpon>dskhachhang.xsd</DependentUpon>
+    </None>
+    <None Include="dskhachhang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dskhachhang.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dskhachhang.xss">
+      <DependentUpon>dskhachhang.xsd</DependentUpon>
+    </None>
+    <None Include="dsnhacungcap.xsc">
+      <DependentUpon>dsnhacungcap.xsd</DependentUpon>
+    </None>
+    <None Include="dsnhacungcap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsnhacungcap.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsnhacungcap.xss">
+      <DependentUpon>dsnhacungcap.xsd</DependentUpon>
+    </None>
+    <None Include="dsnhanvien.xsc">
+      <DependentUpon>dsnhanvien.xsd</DependentUpon>
+    </None>
+    <None Include="dsnhanvien.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsnhanvien.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="dsnhanvien.xss">
+      <DependentUpon>dsnhanvien.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timkiem.png" />
+    <None Include="Resources\xdl.png" />
+    <None Include="Resources\luu.png" />
+    <None Include="Resources\huy%27.png" />
+    <None Include="Resources\sua.png" />
+    <None Include="Resources\xoa.png" />
+    <None Include="Resources\sua%271.png" />
+    <None Include="Resources\sua%27.png" />
+    <None Include="Resources\them.png" />
+    <None Include="Resources\btn_them.png" />
+    <None Include="Resources\495073156_662223470116512_6898294320492654059_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\550838590_3188863041276007_2103793458865663386_n.png" />
+    <None Include="Resources\395654397_1044127046706298_1620811481343154989_n.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\meadow-7215825_1280.jpg" />
+    <None Include="Resources\poppy-1144084_1280.jpg" />
+    <None Include="Resources\lotus-6863937_1280.jpg" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\iceland-5104347_1280.jpg" />
+    <None Include="Resources\chevron-left.png" />
+    <None Include="Resources\sakura.png" />
+    <None Include="Resources\546286133_2005983550149710_7581169631400927705_n1.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\programmer.png" />
+    <None Include="Resources\cogwheel.png" />
+    <None Include="Resources\371083425_1366527380619403_1967642204042705711_n.png" />
+    <None Include="Resources\phoneapp.png" />
+    <None Include="Resources\547186919_1286339786522644_8550340353901071922_n.png" />
+    <None Include="Resources\login1.png" />
+    <None Include="Resources\tologin.png" />
+    <None Include="Resources\registerbtn1.png" />
+    <None Include="Resources\546992716_1358770542430330_5694139555048149433_n.png" />
+    <None Include="Resources\426355997_408587568409033_1166742237866554017_n.png" />
+    <None Include="Resources\userIcon2.png" />
+    <None Include="Resources\userIcon1.png" />
+    <None Include="Resources\userIcon.png" />
+    <None Include="Resources\Screenshot 2025-09-16 074810.png" />
+    <None Include="Resources\phone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuanLyBanDienThoai.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QuanLyBanDienThoai_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>QuanLyBanDienThoai.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
